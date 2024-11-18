@@ -54,8 +54,6 @@ function manufacture(gifts, materials) {
 const gifts = ["tren", "oso", "pelota"]
 const materials = "tronesa"
 
-
-
 //Ejercicio 3
 
 /*En el taller de Santa, un elfo travieso ha estado jugando en la cadena de fabricación de regalos, añadiendo o eliminando un paso no planificado.
@@ -90,8 +88,10 @@ function findNaughtyStep(original, modified) {
         return '';
 }
 
-const original = 'abcd'
-const modified = 'abcde'
+
+const original = 'abcde'
+const modified = 'abcd'
+
 
 
 
@@ -121,6 +121,8 @@ function decode(message) {
   return stack[0];
 }
 
+let stack = ['hola', 'mundo']
+
 
 //const a = decode('hola (odnum)')
 //console.log(a) // hola mundo
@@ -134,4 +136,22 @@ function decode(message) {
 // Paso a paso:
 // 1. Invertimos el anidado -> sa(ualcatn)s
 // 2. Invertimos el que queda -> santaclaus
+
+//Ejercicio 4
+
+function cyberReindeer(road, time) {
+  let copiedRoad = road.split('')
+  let countTime = time
+  let count = 0;
+
+  for(let i = 0; i < copiedRoad.length; i++){
+    countTime--;
+    count++;
+    if(i === time){
+      break
+    }
+  }
+
+  return count
+}
 
