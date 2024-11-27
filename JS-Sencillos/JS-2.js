@@ -210,21 +210,41 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero.length === 3){
+  if(numero.toString().length === 3){
     return true
+  } else {
+    return false
   }
 }
-
-console.log(tieneTresDigitos(233));
-
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-
+  let copiaNumero = numero 
+  let i = 0
+  do{
+    i = i + 1;
+    copiaNumero += 5;
+  } while (i < 8)
+  return copiaNumero
 }
 
+const nombres = ["camilo",'carlos', 'catriel', 'gonzalo', 'alfredo']
+
+
+function nombresConC(nombres){
+  let empiezaConC = [];
+
+  nombres.map((nombre) => {
+    if(nombre[0] === 'C'){
+      empiezaConC.push(nombre);
+    }
+  }); 
+  return empiezaConC;
+}
+
+console.log(nombresConC(nombres))
 
 
 // No modificar nada debajo de esta línea
