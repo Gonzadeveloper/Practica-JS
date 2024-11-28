@@ -1,4 +1,5 @@
-﻿//Mientras trabajas en un cine, descubres que el catálogo de películas está desordenado. Decides crear una función que las vuelva a ordenar por año (de antiguas a nuevas) tanto las películas ya almacenadas, como las nuevas.
+﻿//Ordenar peliculas
+//Mientras trabajas en un cine, descubres que el catálogo de películas está desordenado. Decides crear una función que las vuelva a ordenar por año (de antiguas a nuevas) tanto las películas ya almacenadas, como las nuevas.
 
 //INSTRUCCIONES
 /*La función recibirá dos listas de películas (el catálogo disponible y las nuevas películas) y tendrás que ordenarlas a todas de menor a mayor según su año. Tu tarea será implementar un algoritmo de ordenamiento para crear un único arreglo que contenga todas las películas (las del catálogo y las nuevas) ordenadas de MENOR a MAYOR según el año.
