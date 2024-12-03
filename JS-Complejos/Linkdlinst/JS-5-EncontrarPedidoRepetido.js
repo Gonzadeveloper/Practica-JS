@@ -33,22 +33,8 @@ Language: JavaScript (Node.js)
 * No modifiques nada por fuera del cuerpo de la función.
 */
 
-
 LinkedList.prototype.encontrarPedidoRepetido = function (nombre) {
-// Tu código aquí:
-    let repetidos = new LinkedList();
-    
-    let current = this.head
-
-
-    while (current) {
-        if (current.value.nombre === nombre) {
-            repetidos.add(current.value);
-        }
-        current = current.next;
-    };
-
-    if (!repetidos.head) {
-        return false;
-    } else return repetidos;
+    // Tu código aquí:
 }
+
+

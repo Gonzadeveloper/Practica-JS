@@ -13,10 +13,10 @@ En el caso de de no encontrar tragos con estos precios, debe
 devolver el string: "No hay tragos disponibles".
 
 EJEMPLO
-let tragos [{ nombre: 'Whisky', precio: 312 },
-            { nombre: 'Ron', precio: 156 },
-            { nombre: 'Gin', precio: 215 },
-            {nombre: 'Vino tinto', precio: 100 });
+let tragos = [{ nombre: 'Whisky', precio: 312 },
+    { nombre: 'Ron', precio: 156 },
+    { nombre: 'Gin', precio: 215 },
+    {nombre: 'Vino tinto', precio: 100 }];
 
 encontrarasCares(tragos, 280);
 // Devuelve →
@@ -44,16 +44,8 @@ Language: JavaScript (Node.js)
 
 function encontrarMasCaros(tragos, precio) {
     // Tu código aquí:
-    if (tragos.length === 0) {
-        return "No hay tragos disponibles";
-    }
-    
-    let primerTrago = tragos[0];
-    
-    if (primerTrago.precio >= precio) {
-        let restantes = encontrarMasCaros(tragos.slice(1), precio); 
-        return [primerTrago, ...restantes];
-    } else {
-        return encontrarMasCaros (tragos.slice(1), precio);
-    }
+
 }
+
+
+

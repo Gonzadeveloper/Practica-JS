@@ -15,9 +15,15 @@ INSTRUCCIONES
 EJEMPLO
 
 //LinkedList
+
     Head => ("Cocina") ("Dormitorio") ("Baño") ("Living") ("Garage");
 
+    lista.sliceRooms("Dormitorio", "Living")
+
+    Deberia retornar: => '(Baño)'
+
 Language: JavaScript (Node.js)
+
 1> 'use strict';
 
 Completa el método 'sliceRooms' a continuación.
@@ -33,23 +39,5 @@ Completa el método 'sliceRooms' a continuación.
 
 LinkedList.prototype.sliceRooms = function(firstIndex, secondIndex) { 
     // Tu código aquí:
-    let newList=new LinkedList;
-    let start=false;
-    
-    let currentNode=this.head;
-    while(currentNode) {
-        if(currentNode.value===firstIndex) {
-            start=true
-        }
-        if(start) {
-            if (currentNode.value !==firstIndex && currentNode.value !== secondIndex) {
-                newList.add(currentNode.value);
-            }
-        }
-        if (currentNode.value===secondIndex) {
-            break;
-        }
-        currentNode=currentNode.next;
-    }
-    return newList;
+
 }

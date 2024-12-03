@@ -5,16 +5,17 @@ Estás trabajando como dependiente en una tienda de ropa, y necesitas buscar tod
 EJEMPLO
 
 // Dado el siguiente árbol llamado 'prendas':
-{ nombre: "Camiseta", nur: 13}
-(nombre: "Zapato", nun: 7}
-(nombre: "Cariseta', nun: 24)
-(nombre: "Pollera", nur: 6)
-(nombre: "Zapato", nur: 16)
-(nombre: 27, nun: 27)
-(nombre: "Zapato", run: 3)
-(nombre: "Zapato", num: 45)
-(nombre: "Zapato", run: 4)
 
+                                { nombre: "Camiseta", num: 13 
+                                /                        \
+            { nombre: "Zapato", num: 7 }                { nombre: "Camiseta', num: 24 }
+                            /                            /                         \   
+        { nombre: "Pollera", num: 6 }       { nombre: "Zapato", num: 16 }         { nombre: 27, num: 27 }
+                        /                                                                    \
+    { nombre: "Zapato", rum: 3 }                                                    { nombre: "Zapato", num: 45 }
+                        \
+                    { nombre: "Zapato", rum: 4 }
+                
 prendas.obtener Prendas ("Zapato");
 
 // OUTPUT ESPERADO
@@ -43,16 +44,6 @@ Language: JavaScript (Node.js)
 
 BinarySearchTree.prototype.obtenerPrendas = function (prenda, prendasObtenidas = []) {
     // Tu código aquí
-    if(this.value. nombre === prenda) {
-        prendasObtenidas.push(this.value.nombre);
-    }
 
-    if (this. left !== null) {
-        this.left.obtenerPrendas (prenda, prendas0btenidas);
-    }
-    if (this.right !== null) {
-        this.right.obtenerPrendas (prenda, prendasObtenidas);  
-    }
-
-    return prendasObtenidas;
 };
+

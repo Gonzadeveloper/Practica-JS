@@ -46,15 +46,10 @@ Language: JavaScript (Node.js) O
     - un NÚMERO 'tiempoLimite'.
 * No modifiques nada por fuera del cuerpo de la función. */
 
+
 function prepararMenu (tragos, tiempos, tiempoLimite) { 
     // Tu código aquí
-    let menu = {tragos: new Stack(), tiempos: new Stack()}
-    
-    for (let i = tiempos.length - 1; i >= 0; i--){ 
-        if(tiempos [i]<=tiempoLimite) {
-        menu.tragos.push(tragos[i]);
-        menu.tiempos.push(tiempos[i]);
-        }
-    }
-    return menu;
+
 }
+
+

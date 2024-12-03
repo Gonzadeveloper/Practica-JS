@@ -9,7 +9,9 @@ EJEMPLO
 // Dado el siguiente árbol entradas:
 
                             {nombre: "Chaplin', horario: 10 }
+                            /                               \
         {nombre: "El Hobbit", horario: 7}               {nombre: "Masacre en Texas, horario: 22}
+                /                                                           \
 {nombre: "388", horario: 6}                                         {nombre: "Harry potter, horario: 23}
 
 
@@ -24,7 +26,9 @@ const entradasVendidas = [
 // El árbol deberia quedar:
 
                                 {nombre: "Chaplin, horario: 18}
+                                /                               \
     {nombre: "El Hobbit", horario: 7, vendida: true}              {norbre: "Masacre en Texas", horario: 22} 
+                            /                                               \
 {nombre: "300", hararia: 6, vendida: true}                              {nombre: "Harry potter", hararia: 23, vendida: true}
 
 INSTRUCCIONES
@@ -49,3 +53,4 @@ BinarySearchTree.prototype.marcar = function (entradasVendidas) {
     // Tu código aquí
 
 }
+

@@ -6,7 +6,8 @@
 Ambas listas son arreglos de objetos, cada objeto representa una película y tiene las propiedades nombre (string), año (número), genero (string) y taquillera (booleano).
 
 EJEMPLO
-let catalogo = [{ nombre: 'Avengers: La era de Ultrón',
+let catalogo = [{ 
+                nombre: 'Avengers: La era de Ultrón',
                 año: 2015,
                 genero: 'Fantasia/Aventura/Acción',
                 taquillera: true
@@ -14,14 +15,16 @@ let catalogo = [{ nombre: 'Avengers: La era de Ultrón',
                 nombre: 'Toy Story 3',
                 año: 2010,
                 genero: 'Infantil/Animación',
-                taquillera: true }];
+                taquillera: true 
+                }];
 
-let nuevas Peliculas = [ nombre: 'Sonic', año: 2012, genero: Aventura', taquillera: false }];
+let nuevasPeliculas = [ {nombre: 'Sonic', año: 2012, genero: 'Aventura', taquillera: false }];
 
 ordenarPeliculas(catalogo, nuevasPeliculas)
 // Devuelve →→
 
-[ nombre: 'Toy Story 3', año: 2010, genero: 'Infantil/Animación', taquillera: true },
+[
+{ nombre: 'Toy Story 3', año: 2010, genero: 'Infantil/Animación', taquillera: true },
 { nombre: 'Sonic', año: 2012, genero: 'Aventura', taquillera: false },
 { nombre: 'Avengers: La era de Ultron', año: 2015, genero: "Fantasia/Aventura/Acción', taquillera: true
 }];
@@ -48,26 +51,5 @@ Language: JavaScript (Node.js)
 * TIP: Puede ser de ayuda el método assign de los objetos. */
 function ordenarPeliculas(catalogo, nuevasPeliculas) {
     // Combinar el catálogo existente con las nuevas películas
-    let arrayOrdenado = catalogo.concat(nuevasPeliculas);
-  
-    // Ordenar las películas
-    for (let i = 0; i < arrayOrdenado.length; i++) {
-      for (let prop in arrayOrdenado[i]) {
-        let j = 0;
-  
-        while (j < arrayOrdenado.length) {
-          if (
-            typeof arrayOrdenado[i][prop] === "number" &&
-            arrayOrdenado[i][prop] < arrayOrdenado[j][prop]
-          ) {
-            let element = arrayOrdenado[i];
-            arrayOrdenado[i] = arrayOrdenado[j];
-            arrayOrdenado[j] = element;
-          }
-          j++;
-        }
-      }
-    }
-  
-    return arrayOrdenado;
+
 }

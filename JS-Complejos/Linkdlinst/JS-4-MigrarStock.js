@@ -41,17 +41,7 @@ No modifiques nada por fuera del cuerpo de la función.
 */
 LinkedList.prototype.migrarStock = function (){
     // Tu código aquí:
-    if(!this.head) {
-    return "Actualmente no tenemos stock";
-    }
-    let stockMigrado = {};
 
-    let current = this. head;
-    while (current !== null) {
-        let {nombre, stock} = current.value;
-        stockMigrado[nombre] = stock;
-        current = current.next;
-    }
-
-    return stockMigrado;
 }
+
+

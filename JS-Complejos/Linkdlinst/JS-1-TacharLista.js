@@ -35,21 +35,9 @@ Existe un método remove() en el prototipo de LinkedList con el que puedes elimi
 * No modifiques nada por fuera del cuerpo de la función.
 */
 
+// Agregar el método `tacharLista` al prototipo
+
 LinkedList.prototype.tacharLista = function (sinStock) { 
-    // Tu código awuí:
-    if(!sinStock||sinStock. length === 0) {
-        return this
-    }
+    // Tu código aquí:
 
-    const newList = new LinkedList()
-    let current = this. head
-    
-    while(current) {
-        if(!sinStock.includes (current.value)) {
-            newList.add(current.value)
-        }
-        current = current.next
-    }
-    return newList
 }
-
